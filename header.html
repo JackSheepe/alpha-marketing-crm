@@ -1,35 +1,936 @@
-<div
-  class="pagecrm_header__info-container pagecrm_header__info-container_mobile"
->
-  <img
-    src="/images/LOGO Alpha актуальный 3.svg"
-    alt="логотип Alpha marketing"
-  />
-  <span class="pagecrm_header__number">8 812 409-52-22</span>
-</div>
-<div
-  class="pagecrm_header__nav-search-container pagecrm_header__nav-search-container_mobile"
->
-  <nav class="pagecrm_header__nav">
-    <button class="pagecrm_header__nav-btn">
-      <img
-        class="pagecrm_header__nav-btn-img"
-        src="/images/burger-icon.svg"
-        alt="иконка меню бургер"
-      />
-    </button>
-  </nav>
-  <div class="pagecrm_header__search">
-    <img
-      class="pagecrm_header__search-icon"
-      src="/images/search-icon.svg"
-      alt="иконка поиска"
-    />
-    <input
-      class="pagecrm_header__search-input"
-      name="search"
-      id="search"
-      type="text"
-    />
+<header class="header">
+  <div class="navbar" id="mobileheader">
+    <div class="navbar-inner mobileheader-v2">
+      <div class="navbar__top">
+        <a class="navbar__logo" href="/">
+          <img
+            src="/img/svg/alpham-logo_white.svg"
+            width="195"
+            height="36"
+            alt="Логотип"
+          />
+        </a>
+        <ul class="navbar__phones">
+          <li class="navbar__phone">
+            <a href="tel:+78124095222" class="navbar__link"
+              >8 (812) 409-52-22</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__bottom">
+        <div class="navbar__wrapper">
+          <a class="link navbar__toggle burger pull-left" href="#">
+            <span></span>
+          </a>
+        </div>
+        <div class="main__search xs-search-panel main__search--mobile">
+          <div class="search-form">
+            <form action="/search/index.php">
+              <input type="text" name="q" size="15" maxlength="50" />
+              <button name="s" type="submit" value="" class="search-button">
+                <i class="svg search" aria-hidden="true"
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.6 18L10.3 11.7C9.8 12.1 9.225 12.4167 8.575 12.65C7.925 12.8833 7.23333 13 6.5 13C4.68333 13 3.146 12.3707 1.888 11.112C0.63 9.85333 0.000666667 8.316 0 6.5C0 4.68333 0.629333 3.146 1.888 1.888C3.14667 0.63 4.684 0.000666667 6.5 0C8.31667 0 9.854 0.629333 11.112 1.888C12.37 3.14667 12.9993 4.684 13 6.5C13 7.23333 12.8833 7.925 12.65 8.575C12.4167 9.225 12.1 9.8 11.7 10.3L18 16.6L16.6 18ZM6.5 11C7.75 11 8.81267 10.5623 9.688 9.687C10.5633 8.81167 11.0007 7.74933 11 6.5C11 5.25 10.5623 4.18733 9.687 3.312C8.81167 2.43667 7.74933 1.99933 6.5 2C5.25 2 4.18733 2.43767 3.312 3.313C2.43667 4.18833 1.99933 5.25067 2 6.5C2 7.75 2.43767 8.81267 3.313 9.688C4.18833 10.5633 5.25067 11.0007 6.5 11Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leftside" id="mobilemenu">
+      <div class="mobilemenu-v1 scroller">
+        <nav class="navbar__nav wrap">
+          <div class="menu top topmenu">
+            <ul class="top">
+              <li>
+                <a
+                  class="topmenu__link dark-color parent services"
+                  href="/services/"
+                  title="Услуги"
+                >
+                  <span>Услуги</span>
+                  <span class="arrow"
+                    ><i class="svg svg_triangle_right"></i
+                  ></span>
+                </a>
+                <ul class="dropdown">
+                  <li class="menu_back">
+                    <a href="" class="dark-color" rel="nofollow"
+                      ><i class="svg svg-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu_title">
+                    <a class="dark-color" href="/services/">Услуги</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color parent"
+                      href="/services/kontekstnaya_reklama/"
+                      title="Контекстная Реклама"
+                    >
+                      <span>Контекстная Реклама</span>
+                      <span class="arrow"
+                        ><i class="svg svg_triangle_right"></i
+                      ></span>
+                    </a>
+                    <ul class="dropdown">
+                      <li class="menu_back">
+                        <a href="" class="dark-color" rel="nofollow"
+                          ><i class="svg svg-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="menu_title">
+                        <a
+                          class="dark-color"
+                          href="/services/kontekstnaya_reklama/"
+                          >Контекстная Реклама</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/services/kontekstnaya_reklama/yandex_direct/"
+                          title="Яндекс Директ"
+                        >
+                          <span>Яндекс Директ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/services/kontekstnaya_reklama/vk_reklama/"
+                          title="VK Реклама"
+                        >
+                          <span>VK Реклама</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color"
+                      href="/services/razrabotka_saytov/"
+                      title="Разработка сайтов"
+                    >
+                      <span>Разработка сайтов</span>
+                    </a>
+                  </li>
+                  <li class="selected">
+                    <a
+                      class="dark-color"
+                      href="/services/design/"
+                      title="Дизайн"
+                    >
+                      <span>Дизайн</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color"
+                      href="/services/telefoniya/"
+                      title="Телефония"
+                    >
+                      <span>Телефония</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="topmenu__link dark-color parent cases"
+                  href="/cases/"
+                  title="Кейсы"
+                >
+                  <span>Кейсы</span>
+                  <span class="arrow"
+                    ><i class="svg svg_triangle_right"></i
+                  ></span>
+                </a>
+                <ul class="dropdown">
+                  <li class="menu_back">
+                    <a href="" class="dark-color" rel="nofollow"
+                      ><i class="svg svg-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu_title">
+                    <a class="dark-color" href="/cases/">Кейсы</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color parent"
+                      href="/cases/yandex-direct/"
+                      title="Яндекс.Директ"
+                    >
+                      <span>Яндекс.Директ</span>
+                      <span class="arrow"
+                        ><i class="svg svg_triangle_right"></i
+                      ></span>
+                    </a>
+                    <ul class="dropdown">
+                      <li class="menu_back">
+                        <a href="" class="dark-color" rel="nofollow"
+                          ><i class="svg svg-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="menu_title">
+                        <a class="dark-color" href="/cases/yandex-direct/"
+                          >Яндекс.Директ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/cases/yandex-direct/labrador/"
+                          title="Лабрадор"
+                        >
+                          <span>Лабрадор</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/cases/yandex-direct/pestovskiy-lesokombinat/"
+                          title="Пестовский Лесокомбинат"
+                        >
+                          <span>Пестовский Лесокомбинат</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color parent"
+                      href="/cases/keysy-vk-ads/"
+                      title="VK Ads"
+                    >
+                      <span>VK Ads</span>
+                      <span class="arrow"
+                        ><i class="svg svg_triangle_right"></i
+                      ></span>
+                    </a>
+                    <ul class="dropdown">
+                      <li class="menu_back">
+                        <a href="" class="dark-color" rel="nofollow"
+                          ><i class="svg svg-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="menu_title">
+                        <a class="dark-color" href="/cases/keysy-vk-ads/"
+                          >VK Ads</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/cases/keysy-vk-ads/labrador/"
+                          title="Лабрадор"
+                        >
+                          <span>Лабрадор</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color parent"
+                      href="/cases/mnogostranichnyy-sayt/"
+                      title="Многостраничный сайт"
+                    >
+                      <span>Многостраничный сайт</span>
+                      <span class="arrow"
+                        ><i class="svg svg_triangle_right"></i
+                      ></span>
+                    </a>
+                    <ul class="dropdown">
+                      <li class="menu_back">
+                        <a href="" class="dark-color" rel="nofollow"
+                          ><i class="svg svg-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="menu_title">
+                        <a
+                          class="dark-color"
+                          href="/cases/mnogostranichnyy-sayt/"
+                          >Многостраничный сайт</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/cases/mnogostranichnyy-sayt/labrador-mob/"
+                          title="Лабрадор"
+                        >
+                          <span>Лабрадор</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/cases/mnogostranichnyy-sayt/pestovskiy-lesokombinat/"
+                          title="Пестовский лесокомбинат"
+                        >
+                          <span>Пестовский лесокомбинат</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="topmenu__link dark-color parent other"
+                  href="/other/"
+                  title="Ещё"
+                >
+                  <span>Ещё</span>
+                  <span class="arrow"
+                    ><i class="svg svg_triangle_right"></i
+                  ></span>
+                </a>
+                <ul class="dropdown">
+                  <li class="menu_back">
+                    <a href="" class="dark-color" rel="nofollow"
+                      ><i class="svg svg-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu_title">
+                    <a class="dark-color" href="/other/">Ещё</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dark-color parent"
+                      href="/other/partners/"
+                      title="Партнеры"
+                    >
+                      <span>Партнеры</span>
+                      <span class="arrow"
+                        ><i class="svg svg_triangle_right"></i
+                      ></span>
+                    </a>
+                    <ul class="dropdown">
+                      <li class="menu_back">
+                        <a href="" class="dark-color" rel="nofollow"
+                          ><i class="svg svg-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="menu_title">
+                        <a class="dark-color" href="/other/partners/"
+                          >Партнеры</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dark-color"
+                          href="/other/partners/bitrix24/"
+                          title="Битрикс24"
+                        >
+                          <span>Битрикс24</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dark-color" href="/contacts/" title="Контакты">
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            /*  --- Bind mobile menu  --- */
+            (function ($) {
+              $("body").on("swipeleft", mySwipeLeft);
+              $("body").on("swiperight", mySwipeRight);
+
+              function mySwipeLeft(event) {
+                //console.log('swipe left');
+                // код для левого свайпа
+              }
+
+              function mySwipeRight(event) {
+                //console.log('swipe right');
+                // код для правого свайпа
+              }
+            })(jQuery);
+
+            var $mobileMenu = $("#mobilemenu");
+            //console.log('Hi from top mobile script',$mobileMenu.find('.wrap').first());
+            if ($mobileMenu.length) {
+              $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
+              $mobileMenu.isOpen = $mobileMenu.hasClass("show");
+              $mobileMenu.isDowndrop = $mobileMenu
+                .find(">.scroller")
+                .hasClass("downdrop");
+
+              SwipeMobileMenu = function () {
+                if ($mobileMenu.isOpen) {
+                  CloseMobileMenu();
+                } else {
+                  OpenMobileMenu();
+                }
+              };
+
+              OpenMobileMenu = function () {
+                if (!$mobileMenu.isOpen) {
+                  // hide styleswitcher
+                  if ($(".style-switcher").hasClass("active")) {
+                    $(".style-switcher .switch").trigger("click");
+                  }
+                  $(".style-switcher .switch").hide();
+
+                  if ($mobileMenu.isLeftSide) {
+                    // show overlay
+                    setTimeout(function () {
+                      $mobileMenuOverlay.fadeIn("fast");
+                    }, 0);
+                  } else {
+                    // scroll body to top & set fixed
+                    $("body").scrollTop(0).css({
+                      position: "fixed",
+                    });
+
+                    // set menu top = bottom of header
+                    $mobileMenu.css({
+                      top:
+                        +(
+                          $("#mobileheader").height() +
+                          $("#mobileheader").offset().top
+                        ) + "px",
+                    });
+
+                    // change burger icon
+                    $(".burger").addClass("c");
+                  }
+
+                  // show menu
+                  $mobileMenu.addClass("show");
+                  $mobileMenu.isOpen = true;
+
+                  if (!$mobileMenu.isDowndrop) {
+                    var $wrap = $mobileMenu.find(".wrap").first();
+                    var params = $wrap.data("params");
+                    if (typeof params === "undefined") {
+                      params = {
+                        depth: 0,
+                        scroll: {},
+                        height: {},
+                      };
+                    }
+                    $wrap.data("params", params);
+                  }
+                }
+              };
+
+              CloseMobileMenu = function () {
+                if ($mobileMenu.isOpen) {
+                  setTimeout(function () {
+                    // hide menu
+                    $mobileMenu.removeClass("show");
+                    $mobileMenu.isOpen = false;
+                    $(".mega_fixed_menu").hide();
+                  }, 100);
+
+                  // show styleswitcher
+                  $(".style-switcher .switch").show();
+
+                  if ($mobileMenu.isLeftSide) {
+                    // hide overlay
+                    $mobileMenuOverlay.fadeOut("fast");
+                    /*setTimeout(function() {
+                  $mobileMenuOverlay.fadeOut('fast')
+              }, 100);*/
+                  } else {
+                    // change burger icon
+                    $(".burger").removeClass("c");
+
+                    // body unset fixed
+                    $("body").css({
+                      position: "",
+                    });
+                  }
+
+                  if (!$mobileMenu.isDowndrop) {
+                    setTimeout(function () {
+                      var $scroller = $mobileMenu.find(".scroller").first();
+                      var $wrap = $mobileMenu.find(".wrap").first();
+                      var params = $wrap.data("params");
+                      params.depth = 0;
+                      $wrap.data("params", params).attr("style", "");
+                      $mobileMenu.scrollTop(0);
+                      $scroller.css("height", "");
+                    }, 400);
+                  }
+                }
+              };
+
+              $(".burger").click(function () {
+                SwipeMobileMenu();
+              });
+
+              if ($mobileMenu.isLeftSide) {
+                $mobileMenu
+                  .parent()
+                  .append('<div id="mobilemenu-overlay"></div>');
+                var $mobileMenuOverlay = $("#mobilemenu-overlay");
+
+                $mobileMenuOverlay.click(function () {
+                  if ($mobileMenu.isOpen) {
+                    CloseMobileMenu();
+                  }
+                });
+
+                $mobileMenu.on("swiperight", function (e) {
+                  /*if (!$(e.target).closest('.flexslider').length && !$(e.target).closest('.swipeignore').length) {*/
+                  console.log("swipe right");
+                  OpenMobileMenu();
+                  /* }*/
+                });
+
+                $mobileMenu.on("swipeleft", function (e) {
+                  //if (!$(e.target).closest('.flexslider').length && !$(e.target).closest('.swipeignore').length) {
+                  //console.log('swipe left');
+                  CloseMobileMenu();
+                });
+              } else {
+                $("#mobileheader").click(function (e) {
+                  if (
+                    !$(e.target).closest("#mobilemenu").length &&
+                    !$(e.target).closest(".burger").length &&
+                    $mobileMenu.isOpen
+                  ) {
+                    CloseMobileMenu();
+                  }
+                });
+              }
+
+              $("#mobilemenu .menu a > .arrow").click(function (e) {
+                console.log("1111");
+                var $this = $(this).parent();
+                if ($this.hasClass("parent")) {
+                  e.preventDefault();
+                  if (!$mobileMenu.isDowndrop) {
+                    $this.closest("li").addClass("expanded");
+                    MoveMobileMenuWrapNext();
+                  } else {
+                    if (!$this.closest("li").hasClass("expanded")) {
+                      $this.closest("li").addClass("expanded");
+                    } else {
+                      $this.closest("li").removeClass("expanded");
+                    }
+                  }
+                } else {
+                  if ($this.closest("li").hasClass("counters")) {
+                    var href = $this.attr("href");
+                    if (typeof href !== "undefined") {
+                      window.location.href = href;
+                      window.location.reload();
+                    }
+                  }
+
+                  if (!$this.closest(".menu_back").length) {
+                    CloseMobileMenu();
+                  }
+                }
+              });
+
+              $("#mobilemenu .dropdown .menu_back").click(function (e) {
+                e.preventDefault();
+                var $this = $(this);
+                MoveMobileMenuWrapPrev();
+                setTimeout(function () {
+                  $this.closest(".expanded").removeClass("expanded");
+                }, 400);
+              });
+
+              function MoveMobileMenuWrapNext() {
+                if (!$mobileMenu.isDowndrop) {
+                  var $scroller = $mobileMenu.find(".scroller").first();
+                  var $wrap = $mobileMenu.find(".wrap").first();
+                  if ($wrap.length) {
+                    var params = $wrap.data("params");
+                    var $dropdownNext = $mobileMenu
+                      .find(".expanded>.dropdown")
+                      .eq(params.depth);
+                    if ($dropdownNext.length) {
+                      // save scroll position
+                      params.scroll[params.depth] = parseInt(
+                        $mobileMenu.scrollTop()
+                      );
+
+                      // height while move animating
+                      params.height[params.depth + 1] = Math.max(
+                        $dropdownNext.height(),
+                        !params.depth
+                          ? $wrap.height()
+                          : $mobileMenu
+                              .find(".expanded>.dropdown")
+                              .eq(params.depth - 1)
+                              .height()
+                      );
+                      $scroller.css(
+                        "height",
+                        params.height[params.depth + 1] + "px"
+                      );
+
+                      // inc depth
+                      ++params.depth;
+
+                      // translateX for move
+                      $wrap.css(
+                        "transform",
+                        "translateX(" + -100 * params.depth + "%)"
+                      );
+
+                      // scroll to top
+                      setTimeout(function () {
+                        $mobileMenu.animate(
+                          {
+                            scrollTop: 0,
+                          },
+                          200
+                        );
+                      }, 100);
+
+                      // height on enimating end
+                      var h = $dropdownNext.height();
+                      setTimeout(function () {
+                        if (h) {
+                          $scroller.css("height", h + "px");
+                        } else {
+                          $scroller.css("height", "");
+                        }
+                      }, 200);
+                    }
+
+                    $wrap.data("params", params);
+                  }
+                }
+              }
+
+              function MoveMobileMenuWrapPrev() {
+                if (!$mobileMenu.isDowndrop) {
+                  var $scroller = $mobileMenu.find(".scroller").first();
+                  var $wrap = $mobileMenu.find(".wrap").first();
+                  if ($wrap.length) {
+                    var params = $wrap.data("params");
+                    if (params.depth > 0) {
+                      var $dropdown = $mobileMenu
+                        .find(".expanded>.dropdown")
+                        .eq(params.depth - 1);
+                      if ($dropdown.length) {
+                        // height while move animating
+                        $scroller.css(
+                          "height",
+                          params.height[params.depth] + "px"
+                        );
+
+                        // dec depth
+                        --params.depth;
+
+                        // translateX for move
+                        $wrap.css(
+                          "transform",
+                          "translateX(" + -100 * params.depth + "%)"
+                        );
+
+                        // restore scroll position
+                        setTimeout(function () {
+                          $mobileMenu.animate(
+                            {
+                              scrollTop: params.scroll[params.depth],
+                            },
+                            200
+                          );
+                        }, 100);
+
+                        // height on enimating end
+                        var h = !params.depth
+                          ? false
+                          : $mobileMenu
+                              .find(".expanded>.dropdown")
+                              .eq(params.depth - 1)
+                              .height();
+                        setTimeout(function () {
+                          if (h) {
+                            $scroller.css("height", h + "px");
+                          } else {
+                            $scroller.css("height", "");
+                          }
+                        }, 200);
+                      }
+                    }
+
+                    $wrap.data("params", params);
+                  }
+                }
+              }
+            }
+            /*  --- END Bind mobile menu  --- */
+          </script>
+          <a
+            href="#popup-order"
+            class="navbar__btn arrow btn"
+            data-toggle="modal"
+            data-target="#modal-header"
+            >Задать вопрос</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div id="mobilemenu-overlay"></div>
   </div>
-</div>
+  <div class="header header--desktop">
+    <div class="header__nav">
+      <div class="header__logo">
+        <a href="/"
+          ><img
+            src="/img/svg/alpham-logo_white.svg"
+            class="logo"
+            alt="Логотип"
+            width="274"
+            height="43"
+        /></a>
+      </div>
+      <div class="header__wrapper">
+        <nav class="nav scrollto">
+          <div id="bxdynamic_XEVOpk_start" style="display: none"></div>
+          <ul id="horizontal-multilevel-menu" class="nav__list">
+            <li class="nav__list-item">
+              <a href="/services/" class="nav__link root-item-selected"
+                >Услуги</a
+              >
+              <ul>
+                <li>
+                  <a
+                    href="/services/kontekstnaya_reklama/"
+                    class="nav__link nav__link--lvl_2 parent"
+                    >Контекстная Реклама</a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        class="nav__link"
+                        href="/services/kontekstnaya_reklama/yandex_direct/"
+                        >Яндекс Директ</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="nav__link"
+                        href="/services/kontekstnaya_reklama/vk_reklama/"
+                        >VK Реклама</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="nav__link" href="/services/razrabotka_saytov/"
+                    >Разработка сайтов</a
+                  >
+                </li>
+
+                <li class="item-selected">
+                  <a class="nav__link" href="/services/design/">Дизайн</a>
+                </li>
+
+                <li>
+                  <a class="nav__link" href="/services/telefoniya/"
+                    >Телефония</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="/cases/" class="nav__link root-item">Кейсы</a>
+              <ul>
+                <li>
+                  <a
+                    href="/cases/yandex-direct/"
+                    class="nav__link nav__link--lvl_2 parent"
+                    >Яндекс.Директ</a
+                  >
+                  <ul>
+                    <li>
+                      <a class="nav__link" href="/cases/yandex-direct/labrador/"
+                        >Лабрадор</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="nav__link"
+                        href="/cases/yandex-direct/pestovskiy-lesokombinat/"
+                        >Пестовский Лесокомбинат</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/cases/keysy-vk-ads/"
+                    class="nav__link nav__link--lvl_2 parent"
+                    >VK Ads</a
+                  >
+                  <ul>
+                    <li>
+                      <a class="nav__link" href="/cases/keysy-vk-ads/labrador/"
+                        >Лабрадор</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/cases/mnogostranichnyy-sayt/"
+                    class="nav__link nav__link--lvl_2 parent"
+                    >Многостраничный сайт</a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        class="nav__link"
+                        href="/cases/mnogostranichnyy-sayt/labrador-mob/"
+                        >Лабрадор</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="nav__link"
+                        href="/cases/mnogostranichnyy-sayt/pestovskiy-lesokombinat/"
+                        >Пестовский лесокомбинат</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="/other/" class="nav__link root-item">Ещё</a>
+              <ul>
+                <li>
+                  <a
+                    href="/other/partners/"
+                    class="nav__link nav__link--lvl_2 parent"
+                    >Партнеры</a
+                  >
+                  <ul>
+                    <li>
+                      <a class="nav__link" href="/other/partners/bitrix24/"
+                        >Битрикс24</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a class="nav__link" href="/contacts/">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="menu-clear-left"></div>
+          <div id="bxdynamic_XEVOpk_end" style="display: none"></div>
+        </nav>
+        <div class="header__search">
+          <div
+            data-toggle="modal"
+            data-target="#modal-search"
+            class="navsearch-button xs-modal-popup"
+          >
+            <i class="svg search" aria-hidden="true">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6 18L10.3 11.7C9.8 12.1 9.225 12.4167 8.575 12.65C7.925 12.8833 7.23333 13 6.5 13C4.68333 13 3.146 12.3707 1.888 11.112C0.63 9.85333 0.000666667 8.316 0 6.5C0 4.68333 0.629333 3.146 1.888 1.888C3.14667 0.63 4.684 0.000666667 6.5 0C8.31667 0 9.854 0.629333 11.112 1.888C12.37 3.14667 12.9993 4.684 13 6.5C13 7.23333 12.8833 7.925 12.65 8.575C12.4167 9.225 12.1 9.8 11.7 10.3L18 16.6L16.6 18ZM6.5 11C7.75 11 8.81267 10.5623 9.688 9.687C10.5633 8.81167 11.0007 7.74933 11 6.5C11 5.25 10.5623 4.18733 9.687 3.312C8.81167 2.43667 7.74933 1.99933 6.5 2C5.25 2 4.18733 2.43767 3.312 3.313C2.43667 4.18833 1.99933 5.25067 2 6.5C2 7.75 2.43767 8.81267 3.313 9.688C4.18833 10.5633 5.25067 11.0007 6.5 11Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__phone">
+          <a href="tel:+78124095222">8 812 409-52-22</a>
+        </div>
+        <div
+          class="header__btn btn btn--arrow"
+          data-toggle="modal"
+          data-target="#modal-header"
+        >
+          Задать вопрос
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="section__wrapper breadcrumbs__wrapper breadcrumbs__wrapper--design-bg"
+  >
+    <link
+      href="/bitrix/css/main/font-awesome.css?170044184828777"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <div
+      class="bx-breadcrumb"
+      itemscope=""
+      itemtype="http://schema.org/BreadcrumbList"
+    >
+      <div
+        class="bx-breadcrumb-item"
+        id="bx_breadcrumb_0"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="http://schema.org/ListItem"
+      >
+        <a href="/" title="Главная" itemprop="item">
+          <span itemprop="name">Главная</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </div>
+      <div
+        class="bx-breadcrumb-item"
+        id="bx_breadcrumb_1"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="http://schema.org/ListItem"
+      >
+        <i class="fa fa-angle-right"></i>
+        <a href="/services/" title="Услуги Альфа маркетинг" itemprop="item">
+          <span itemprop="name">Услуги Альфа маркетинг</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </div>
+      <div class="bx-breadcrumb-item">
+        <i class="fa fa-angle-right"></i>
+        <span>Дизайн</span>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+  </div>
+</header>
