@@ -58,44 +58,90 @@
         </li>
       </ul>
     </div>
-    <div class="virtual-telephony-features">
-      <div class="virtual-telephony-features__card">
-        <span
-          class="virtual-telephony-features__image virtual-telephony-features__image--number"
-        ></span>
-        <p class="virtual-telephony-features__text">
-          Повышение эффективности отдела продаж
-        </p>
-      </div>
-      <div class="virtual-telephony-features__card">
-        <span
-          class="virtual-telephony-features__image virtual-telephony-features__image--customization"
-        ></span>
-        <p class="virtual-telephony-features__text">
-          Удобное общение с заказчиками
-        </p>
-      </div>
-      <div class="virtual-telephony-features__card">
-        <span
-          class="virtual-telephony-features__image virtual-telephony-features__image--receiving-calls"
-        ></span>
-        <p class="virtual-telephony-features__text">Лучшие CRM-системы</p>
-      </div>
-      <div class="virtual-telephony-features__card">
-        <span
-          class="virtual-telephony-features__image virtual-telephony-features__image--operators"
-        ></span>
-        <p class="virtual-telephony-features__text">
-          Карточка с историей событий для каждого заказчика
-        </p>
-      </div>
-    </div>
     <div class="section__wrapper">
+      <div class="pagecrm_hero">
+        <h1 class="pagecrm_heading">CRM</h1>
+        <img src="/images/CRM.svg" alt="CRM иконка большая" />
+        <button class="btn main__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+      </div>
+      <h2 class="manage-business__title">Управление бизнес-процессами</h2>
+      <div class="manage-business-features">
+        <div class="manage-business-features__card">
+          <span
+            class="manage-business-features__image manage-business-features__image--efficiency"
+          ></span>
+          <p class="manage-business-features__text">
+            Повышение эффективности отдела продаж
+          </p>
+        </div>
+        <div class="manage-business-features__card">
+          <span
+            class="manage-business-features__image manage-business-features__image--comf"
+          ></span>
+          <p class="manage-business-features__text">
+            Удобное общение с заказчиками
+          </p>
+        </div>
+        <div class="manage-business-features__card">
+          <span
+            class="manage-business-features__image manage-business-features__image--best"
+          ></span>
+          <p class="manage-business-features__text">Лучшие CRM-системы</p>
+        </div>
+        <div class="manage-business-features__card">
+          <span
+            class="manage-business-features__image manage-business-features__image--card"
+          ></span>
+          <p class="manage-business-features__text">
+            Карточка с историей событий для каждого заказчика
+          </p>
+        </div>
+      </div>
+      <div class="pagecrm_choises">
+        <div class="pagecrm_choises__container">
+          <img
+            class="pagecrm_choises__img"
+            src="/images/amoCRM.webp"
+            alt="amoCRM логотип"
+          />
+          <div class="pagecrm_choises__right">
+            <p class="pagecrm_choises__right-p">Функции:</p>
+            <ul class="pagecrm_choises__right-list">
+              <li class="pagecrm_choises__right-list-item">CRM</li>
+              <li class="pagecrm_choises__right-list-item">
+                Интеграция с другими сервисами
+              </li>
+              <li class="pagecrm_choises__right-list-item">Онлайн-бот</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pagecrm_choises__container">
+          <img
+            class="pagecrm_choises__img"
+            src="/images/Б24.webp"
+            alt="Битрикс24 логотип"
+          />
+          <div class="pagecrm_choises__right">
+            <p class="pagecrm_choises__right-p">Функции:</p>
+            <ul class="pagecrm_choises__right-list">
+              <li class="pagecrm_choises__right-list-item">CRM</li>
+              <li class="pagecrm_choises__right-list-item">
+                Корпоративный портал
+              </li>
+              <li class="pagecrm_choises__right-list-item">Онлайн офис</li>
+              <li class="pagecrm_choises__right-list-item">
+                Интеграция с другими сервисами и т.д.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <form
         method="POST"
         action="#"
         id="form-yadirect"
-        class="form_post design-form__form"
+        class="design-form__form"
       >
         <h3 class="design-form__subtitle">Заполните форму</h3>
         <p class="design-form__text">
@@ -127,327 +173,317 @@
           type="text"
           class="design-form-input"
           name="user_name"
-          placeholder="Имя*"
+          placeholder="Имя"
           required=""
         />
         <input
           type="tel"
           class="design-form-input"
           name="profile_phone"
-          placeholder="Ваш телефон*"
+          placeholder="Ваш телефон"
           required=""
         />
+        <select
+          id="choose_system"
+          title="Выберите систему"
+          class="design-form-input"
+          name="choose_system"
+          required
+        >
+          <option class="design-form-input__option" value="default">
+            Выберите систему
+          </option>
+          <option class="design-form-input__option" value="amoCRM">
+            amoCRM
+          </option>
+          <option class="design-form-input__option" value="bitrix24">
+            Битрикс 24
+          </option>
+        </select>
+
         <textarea
           name="MESSAGE"
           id=""
-          class="design-form-input"
-          placeholder="Что необходимо сделать, напишите"
+          class="design-form-input design-form-input_textarea"
+          placeholder="Напишите что вас интересует,                                                           например: Покупка лицензии amoCRM"
         ></textarea>
         <button type="submit" class="submit-btn btn btn--design-form">
           Отправить заявку
         </button>
-        <div class="note-terms contacts_note-terms mt-2">
-          <label class="feedback__privacy">
-            <input type="checkbox" checked="" autocomplete="off" required="" />
-            <span class="checkbox__form-label">&nbsp;&nbsp;&nbsp;</span>
-            <span>
-              Нажимая на кнопку, я соглашаюсь с условиями<br /><a
-                href="/privacy-policy.php"
-                target="_blank"
-                >политики конфиденциальности</a
-              ></span
-            >
-          </label>
-        </div>
       </form>
-    </div>
-    <section class="design-everything section-outer">
-      <div class="section-inner section__wrapper">
-        <div class="design-everything__wrapper">
-          <h2 class="design-everything__title">КОМУ ПОЛЕЗНА CRM</h2>
-          <div class="design-everything__block">
-            <ul class="design-everything__list">
-              <li class="design-everything__item">
-                <p class="design-everything__text">
-                  Любому бизнесу, работающему с клиентской базой
-                </p>
-              </li>
-              <li class="design-everything__item">
-                <p class="design-everything__text">
-                  Бизнесу, управляющему ассортиментом
-                </p>
-              </li>
-              <li class="design-everything__item">
-                <p class="design-everything__text">
-                  Бизнесу, где есть задачи, планирование, отчетность и KPI
-                </p>
-              </li>
-            </ul>
+      <section class="design-everything section-outer">
+        <div class="section-inner section__wrapper">
+          <div class="design-everything__wrapper">
+            <h2 class="design-everything__title">КОМУ ПОЛЕЗНА CRM</h2>
+            <div class="design-everything__block">
+              <ul class="design-everything__list">
+                <li class="design-everything__item">
+                  <p class="design-everything__text">
+                    Любому бизнесу, работающему с клиентской базой
+                  </p>
+                </li>
+                <li class="design-everything__item">
+                  <p class="design-everything__text">
+                    Бизнесу, управляющему ассортиментом
+                  </p>
+                </li>
+                <li class="design-everything__item">
+                  <p class="design-everything__text">
+                    Бизнесу, где есть задачи, планирование, отчетность и KPI
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-outer design-case">
-      <div class="section-inner section__wrapper">
-        <div class="design-case__wrapper">
-          <div class="design-case__block">
-            <span class="design-case__sub-title design-case__sub-title--yandex"
-              >Кейсы Яндекс.Директ</span
-            >
-            <a href="/cases/yandex-direct/" class="design-case__link"
-              >Все кейсы</a
-            >
-          </div>
-          <p class="design-case__text">
-            Качественные заявки из Яндекс, эффективная реклама
-          </p>
-          <ul class="design-case__list">
-            <li class="design-case__item" id="bx_3218110189_106">
-              <div class="design-case__item-img">
-                <img
-                  src="/upload/iblock/f1c/qwxyylypnsxttds8kt7y39slxk1fsa8x.webp"
-                  alt=""
-                  class="design-case__img"
-                />
-                <span class="design-case__item-img__title"
-                  >г. Санкт-Петербург</span
-                >
-              </div>
-              <h3 class="design-case__project">“Лабрадор”</h3>
-              <p class="design-case__description">Оконный завод</p>
-              <a
-                href="/cases/yandex-direct/labrador/"
-                class="design-case__details-link btn"
-                >Подробнее</a
+      </section>
+
+      <div class="design-case__wrapper">
+        <div class="design-case__block">
+          <h2
+            class="design-everything__title design-everything__title_witdDesc"
+          >
+            CRM В БИЗНЕСЕ
+          </h2>
+          <span class="design-case__sub-title design-case__sub-title--yandex"
+            >Наши кейсы</span
+          >
+        </div>
+        <ul class="design-case__list">
+          <li class="design-case__item" id="bx_3218110189_106">
+            <div class="design-case__item-img">
+              <img
+                src="/images/Пестовский Лесокомбинат.svg"
+                alt=""
+                class="design-case__img"
+              />
+              <span class="design-case__item-img__title"
+                >г. Санкт-Петербург</span
               >
-            </li>
-            <li class="design-case__item" id="bx_3218110189_107">
-              <div class="design-case__item-img">
-                <img
-                  src="/upload/iblock/620/luxr5cyjuysvnm7kriwrtkxgwbf16ct2.webp"
-                  alt=""
-                  class="design-case__img"
-                />
-                <span class="design-case__item-img__title"
-                  >г. Санкт-Петербург</span
-                >
-              </div>
+            </div>
+            <div class="design-case__info">
               <h3 class="design-case__project">“Пестовский Лесокомбинат”</h3>
+              <p class="design-case__description">Оконный завод</p>
+              <p class="design-case__crm">Работают на платформе amoCRM</p>
+            </div>
+            <a
+              href="/cases/yandex-direct/pestovskiy-lesokombinat//"
+              class="design-case__details-link btn btn_gradient"
+              >Подробнее</a
+            >
+          </li>
+          <li class="design-case__item" id="bx_3218110189_107">
+            <div class="design-case__item-img">
+              <img
+                src="/images/Магазин “Mongol Store”.svg"
+                alt=""
+                class="design-case__img"
+              />
+              <span class="design-case__item-img__title"
+                >г. Санкт-Петербург</span
+              >
+            </div>
+            <div class="design-case__info">
+              <h3 class="design-case__project">Магазин “Mongol Store”</h3>
               <p class="design-case__description">
                 Строительство частных домов
               </p>
-              <a
-                href="/cases/yandex-direct/pestovskiy-lesokombinat/"
-                class="design-case__details-link btn"
-                >Подробнее</a
-              >
-            </li>
-          </ul>
-        </div>
+              <p class="design-case__crm">Работают на платформе битриксCRM</p>
+            </div>
+            <a
+              href="/cases/yandex-direct/mongol-store/"
+              class="design-case__details-link btn btn_gradient"
+              >Подробнее</a
+            >
+          </li>
+        </ul>
       </div>
-    </section>
-    <ul class="services__list filter-list" id="services">
-      <li
-        class="services__list-item 1 project_0 all mix"
-        id="bx_3218110189_78"
-        style="display: inline-block"
-      >
-        <img
-          class="list-item__icon"
-          src="/upload/iblock/86d/us7qq8qmr723g8b04wdwfqd1aobkwj6z.webp"
-        />
-        <h3 class="list-item__name">Яндекс.Директ</h3>
-        <p class="list-item__price">От 40 000 ₽</p>
-        <a
-          href="/services/kontekstnaya_reklama/yandex_direct/"
-          class="services__btn btn btn--arrow"
-          >Узнать подробнее</a
+      <h2 class="design-everything__title">СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</h2>
+      <ul class="services__list filter-list" id="services">
+        <li
+          class="services__list-item 1 project_0 all mix"
+          id="bx_3218110189_78"
+          style="display: inline-block"
         >
-      </li>
-      <li
-        class="services__list-item 1 project_1 all mix"
-        id="bx_3218110189_79"
-        style="display: inline-block"
-      >
-        <img
-          class="list-item__icon"
-          src="/upload/iblock/c03/85y4z5fkdnsnq7tt6itddakmv6d6pdvv.webp"
-        />
-        <h3 class="list-item__name">VK Реклама</h3>
-        <p class="list-item__price">От 40 000 ₽</p>
-        <a
-          href="/services/kontekstnaya_reklama/vk_reklama/"
-          class="services__btn btn btn--arrow"
-          >Узнать подробнее</a
-        >
-      </li>
-      <li
-        class="services__list-item 2 project_2 all mix"
-        id="bx_3218110189_20"
-        style="display: inline-block"
-      >
-        <h3 class="list-item__name">Разработка сайтов</h3>
-        <p class="list-item__price">От 45 000 ₽</p>
-        <a
-          href="/services/razrabotka_saytov/"
-          class="services__btn btn btn--arrow"
-          >Узнать подробнее</a
-        >
-      </li>
-      <li
-        class="services__list-item 3 project_3 all mix visually-hidden"
-        id="bx_3218110189_80"
-        style="display: inline-block"
-      >
-        <h3 class="list-item__name">Дизайн</h3>
-        <p class="list-item__price">От 40 000 ₽</p>
-        <a href="/services/design/" class="services__btn btn btn--arrow"
-          >Узнать подробнее</a
-        >
-      </li>
-      <li
-        class="services__list-item 4 project_4 all mix visually-hidden"
-        id="bx_3218110189_81"
-        style="display: inline-block"
-      >
-        <h3 class="list-item__name">Телефония</h3>
-        <p class="list-item__price">От 1 000 ₽</p>
-        <a href="/services/telefoniya/" class="services__btn btn btn--arrow"
-          >Узнать подробнее</a
-        >
-      </li>
-    </ul>
-    <section class="telephony-partner telephony-wrapper">
-      <h2 class="telephony-partner__title telephony-title">
-        Наш партнёр по телефонии
-      </h2>
-      <div class="telephony-partner__wrapper">
-        <div class="telephony-partner__container">
-          <picture>
-            <source media="(min-width:992px)" srcset="/images/bitrix.svg" />
-            <img
-              class="telephony-partner__image"
-              src="/images/bitrix.svg"
-              width="202"
-              height="75"
-              alt="Логотип компании Bitrix"
-            />
-          </picture>
-        </div>
-
-        <div class="telephony-partner__container-text">
-          <p class="telephony-partner__text">Битрикс24 (Управление бизнесом)</p>
-          <p class="telephony-partner__text">amoCRM (Управление бизнесом)</p>
-        </div>
-      </div>
-    </section>
-    <div class="section__wrapper">
-      <section class="feedback">
-        <div class="feedback__left">
-          <h3 class="feedback__title">Напишите нам!</h3>
-          <p class="feedback__text">
-            Заполните заявку и Мы<br />
-            свяжемся с Вами в течение<br />
-            15 минут
-          </p>
-          <p class="feedback__company">Команда Alpha marketing</p>
-        </div>
-        <div class="feedback__right">
-          <div id="bxdynamic_qSEer1_start" style="display: none"></div>
-
-          <form
-            method="POST"
-            action="#"
-            id="form-feedback"
-            class="form_post form_inline feedback__form"
+          <img
+            class="list-item__icon"
+            src="/upload/iblock/86d/us7qq8qmr723g8b04wdwfqd1aobkwj6z.webp"
+          />
+          <h3 class="list-item__name">Яндекс.Директ</h3>
+          <p class="list-item__price">От 40 000 ₽</p>
+          <a
+            href="/services/kontekstnaya_reklama/yandex_direct/"
+            class="services__btn btn btn--arrow"
+            >Заказать</a
           >
-            <div class="d-none value">
-              <input type="hidden" name="admin_mail" value="" />
-              <input type="hidden" name="from_mail" value="" />
-              <input type="hidden" name="form_class" value="form_footer" />
-              <input type="hidden" name="feed_form" value="36" />
-              <input
-                type="hidden"
-                name="FORM_URL"
-                value="https://alpham.pro/services/design/"
+        </li>
+        <li
+          class="services__list-item 1 project_1 all mix"
+          id="bx_3218110189_79"
+          style="display: inline-block"
+        >
+          <img
+            class="list-item__icon"
+            src="/upload/iblock/c03/85y4z5fkdnsnq7tt6itddakmv6d6pdvv.webp"
+          />
+          <h3 class="list-item__name">VK Реклама</h3>
+          <p class="list-item__price">От 40 000 ₽</p>
+          <a
+            href="/services/kontekstnaya_reklama/vk_reklama/"
+            class="services__btn btn btn--arrow"
+            >Заказать</a
+          >
+        </li>
+        <li
+          class="services__list-item 2 project_2 all mix"
+          id="bx_3218110189_20"
+          style="display: inline-block"
+        >
+          <h3 class="list-item__name">Разработка сайтов</h3>
+          <p class="list-item__price">От 45 000 ₽</p>
+          <a
+            href="/services/razrabotka_saytov/"
+            class="services__btn btn btn--arrow"
+            >Заказать</a
+          >
+        </li>
+      </ul>
+      <section class="telephony-partner telephony-wrapper">
+        <h2 class="telephony-partner__title telephony-title">
+          Наш партнёр по телефонии
+        </h2>
+        <div class="telephony-partner__wrapper">
+          <div class="telephony-partner__container">
+            <picture>
+              <source media="(min-width:992px)" srcset="/images/bitrix.svg" />
+              <img
+                class="telephony-partner__image"
+                src="/images/bitrix.svg"
+                width="202"
+                height="75"
+                alt="Логотип компании Bitrix"
               />
-              <input type="hidden" name="utm_source" value="" />
-              <input type="hidden" name="utm_medium" value="" />
-              <input type="hidden" name="utm_term" value="" />
-              <input type="hidden" name="utm_campaign" value="" />
-              <input type="hidden" name="utm_content" value="" />
-              <input type="hidden" name="block" value="" />
-              <input type="hidden" name="position" value="" />
-              <input type="hidden" name="source" value="" />
-              <input type="hidden" name="network" value="" />
-              <input type="hidden" name="placement" value="" />
-            </div>
-            <div class="form-group">
-              <input
-                class="form__input"
-                type="text"
-                name="user_name"
-                placeholder="Имя*"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="form__input"
-                type="email"
-                name="user_mail"
-                placeholder="@Почта*"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="form__input"
-                type="tel"
-                name="profile_phone"
-                placeholder="Ваш телефон*"
-                required=""
-              />
-            </div>
-            <div class="form-group comment-group">
-              <textarea
-                class="form__textarea"
-                name="MESSAGE"
-                placeholder="Что необходимо сделать, напишите"
-                id="x_contact_massage"
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="submit-btn btn feedback__btn">
-                Отправить заявку
-              </button>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="note-terms contacts_note-terms mt-2">
-                  <label class="feedback__privacy">
-                    <input
-                      type="checkbox"
-                      checked=""
-                      autocomplete="off"
-                      required=""
-                    />
-                    <span class="checkbox__form-label">&nbsp;&nbsp;&nbsp;</span>
-                    <span>
-                      Нажимая на кнопку, я соглашаюсь с условиями<br /><a
-                        href="/privacy-policy.php"
-                        target="_blank"
-                        >политики конфиденциальности</a
-                      ></span
-                    >
-                  </label>
-                </div>
-              </div>
-            </div>
-          </form>
-          <div id="bxdynamic_qSEer1_end" style="display: none"></div>
+            </picture>
+          </div>
+
+          <div class="telephony-partner__container-text">
+            <p class="telephony-partner__text">
+              Битрикс24 (Управление бизнесом)
+            </p>
+            <p class="telephony-partner__text">amoCRM (Управление бизнесом)</p>
+          </div>
         </div>
       </section>
+      <div class="section__wrapper">
+        <section class="feedback">
+          <div class="feedback__left">
+            <h3 class="feedback__title">Напишите нам!</h3>
+            <p class="feedback__text">
+              Заполните заявку и Мы<br />
+              свяжемся с Вами в течение<br />
+              15 минут
+            </p>
+            <p class="feedback__company">Команда Alpha marketing</p>
+          </div>
+          <div class="feedback__right">
+            <div id="bxdynamic_qSEer1_start" style="display: none"></div>
+
+            <form
+              method="POST"
+              action="#"
+              id="form-feedback"
+              class="form_inline feedback__form"
+            >
+              <div class="d-none value">
+                <input type="hidden" name="admin_mail" value="" />
+                <input type="hidden" name="from_mail" value="" />
+                <input type="hidden" name="form_class" value="form_footer" />
+                <input type="hidden" name="feed_form" value="36" />
+                <input
+                  type="hidden"
+                  name="FORM_URL"
+                  value="https://alpham.pro/services/design/"
+                />
+                <input type="hidden" name="utm_source" value="" />
+                <input type="hidden" name="utm_medium" value="" />
+                <input type="hidden" name="utm_term" value="" />
+                <input type="hidden" name="utm_campaign" value="" />
+                <input type="hidden" name="utm_content" value="" />
+                <input type="hidden" name="block" value="" />
+                <input type="hidden" name="position" value="" />
+                <input type="hidden" name="source" value="" />
+                <input type="hidden" name="network" value="" />
+                <input type="hidden" name="placement" value="" />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="user_name"
+                  placeholder="Имя*"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="user_mail"
+                  placeholder="@Почта*"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="profile_phone"
+                  placeholder="Ваш телефон*"
+                  required=""
+                />
+              </div>
+              <div class="form-group comment-group">
+                <textarea
+                  class="form__textarea"
+                  name="MESSAGE"
+                  placeholder="Что необходимо сделать, напишите"
+                  id="x_contact_massage"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="submit-btn btn feedback__btn">
+                  Отправить заявку
+                </button>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="note-terms contacts_note-terms mt-2">
+                    <label class="feedback__privacy">
+                      <input
+                        type="checkbox"
+                        checked=""
+                        autocomplete="off"
+                        required=""
+                      />
+                      <span class="checkbox__form-label"
+                        >&nbsp;&nbsp;&nbsp;</span
+                      >
+                      <span>
+                        Нажимая на кнопку, я соглашаюсь с условиями<br /><a
+                          href="/privacy-policy.php"
+                          target="_blank"
+                          >политики конфиденциальности</a
+                        ></span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div id="bxdynamic_qSEer1_end" style="display: none"></div>
+          </div>
+        </section>
+      </div>
     </div>
     <footer class="pagecrm_footer" id="footer"></footer>
   </body>
