@@ -77,7 +77,7 @@ body {
   font-weight: normal;
   scroll-behavior: smooth;
   background-color: black;
-  background-image: url(/images/Моб_CRM.webp);
+  background-image: url(../images/Моб_CRM.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -234,7 +234,7 @@ textarea::-webkit-input-placeholder {
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  background: url("/images/Arrow-up.svg") no-repeat right;
+  background: url("../images/Arrow-up.svg") no-repeat right;
   background-size: cover;
   padding: 11px;
 }
@@ -452,7 +452,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   padding: 50px 122px;
   padding-right: 0;
-  background: url("/images/feadback_bg.svg") no-repeat bottom;
+  background: url("../images/feadback_bg.svg") no-repeat bottom;
   background-size: 100%;
 }
 
@@ -679,11 +679,11 @@ input::-webkit-inner-spin-button {
 }
 
 .pagecrm_footer__social-link.pagecrm_tg {
-  background: url("/images/tg.svg") no-repeat center;
+  background: url("../images/tg.svg") no-repeat center;
 }
 
 .pagecrm_footer__social-link.pagecrm_vk {
-  background: url("/images/vk.svg") no-repeat center;
+  background: url("../images/vk.svg") no-repeat center;
   animation: none;
 }
 
@@ -817,7 +817,7 @@ input::-webkit-inner-spin-button {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url("/images/phones__design.webp") no-repeat center;
+  background: url("../images/phones__design.webp") no-repeat center;
   background-size: contain;
 }
 
@@ -900,7 +900,7 @@ input::-webkit-inner-spin-button {
   display: block;
   width: 100px;
   height: 109px;
-  background-image: url(/images/checkbox.webp);
+  background-image: url(../images/checkbox.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1311,22 +1311,22 @@ input::-webkit-inner-spin-button {
 }
 
 .pagecrm_manage-business-features__image--efficiency::before {
-  background: url("/images/Повышение\ эффективности.svg") no-repeat;
+  background: url("../images/Повышение\ эффективности.svg") no-repeat;
   background-size: contain;
 }
 
 .pagecrm_manage-business-features__image--comf::before {
-  background: url("/images/Удобное\ общение.svg") no-repeat;
+  background: url("../images/Удобное\ общение.svg") no-repeat;
   background-size: contain;
 }
 
 .pagecrm_manage-business-features__image--best::before {
-  background: url("/images/Лучшие\ CRM.svg") no-repeat;
+  background: url("../images/Лучшие\ CRM.svg") no-repeat;
   background-size: contain;
 }
 
 .pagecrm_manage-business-features__image--card::before {
-  background: url("/images/Карточка.svg") no-repeat;
+  background: url("../images/Карточка.svg") no-repeat;
   background-size: contain;
 }
 
@@ -1498,7 +1498,7 @@ input::-webkit-inner-spin-button {
   margin: auto;
   width: 20px;
   height: 20px;
-  background: url("/images/icon-arrow.svg") no-repeat;
+  background: url("../images/icon-arrow.svg") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -1622,7 +1622,7 @@ div.bx-yandex-map {
 }
 
 .pagecrm_fa-angle-right:before {
-  content: url(../images/arrow-right.svg);
+  content: url(.../images/arrow-right.svg);
   margin-right: 5px;
 }
 
@@ -1683,7 +1683,7 @@ div.bx-yandex-map {
 
 .pagecrm_hero::before {
   position: absolute;
-  content: url(/images/wave.svg);
+  content: url(../images/wave.svg);
   top: 30%;
   transform: translateY(-30%);
   z-index: -1;
@@ -1775,7 +1775,7 @@ div.bx-yandex-map {
 }
 
 .pagecrm_choises__right-list-item::before {
-  content: url(/images/check-circle-1.svg);
+  content: url(../images/check-circle-1.svg);
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -1856,12 +1856,12 @@ div.bx-yandex-map {
 
 .pagecrm_popup-success__close-btn {
   position: absolute;
-  content: url(/images/close.svg);
+  content: url(../images/close.svg);
   top: 26.5px;
   right: 26.5px;
   width: 24px;
   height: 24px;
-  background: url(/images/close.svg) no-repeat;
+  background: url(../images/close.svg) no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -2028,7 +2028,7 @@ div.bx-yandex-map {
   .pagecrm_choises__right-list-item::before {
     width: 28px;
     height: 28px;
-    content: url(/images/check-circle-1_b.svg);
+    content: url(../images/check-circle-1_b.svg);
   }
   .pagecrm_choises__right-list-item_services {
     font-size: 24px !important;
@@ -2045,7 +2045,7 @@ div.bx-yandex-map {
     border-radius: 19.17px;
   }
   .pagecrm_services__list-item {
-    background: url(/images/services-list-item-d.svg);
+    background: url(../images/services-list-item-d.svg);
     background-size: cover;
   }
   .pagecrm_hero__img {
@@ -2074,7 +2074,7 @@ div.bx-yandex-map {
   }
   .pagecrm_crm-form_zayavka::after {
     position: absolute;
-    content: url(/images/Group\ 1321314634.svg);
+    content: url(../images/Group\ 1321314634.svg);
     left: 30%;
   }
   .pagecrm_crm-form_zayavka .pagecrm_crm-form-input {
@@ -2095,17 +2095,17 @@ div.bx-yandex-map {
 
 @media (min-width: 1600px) {
   body {
-    background-image: url(/images/Страница_CRM.webp);
+    background-image: url(../images/Страница_CRM.webp);
   }
 }
 
 @media (min-width: 630px) {
   .pagecrm_hero::before {
-    content: url(/images/wave_b.svg);
+    content: url(../images/wave_b.svg);
     transform: translateY(-40%);
   }
   .pagecrm_crm-form_zayavka1::before {
-    content: url(/images/wave2.svg);
+    content: url(../images/wave2.svg);
     position: absolute;
     z-index: -100;
   }
@@ -2298,7 +2298,7 @@ div.bx-yandex-map {
   .pagecrm_feedback {
     flex-direction: column;
     padding: 20px 30px;
-    background: url("/images/feadback_bg_m.svg") no-repeat bottom;
+    background: url("../images/feadback_bg_m.svg") no-repeat bottom;
     background-size: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -3379,7 +3379,7 @@ div.bx-yandex-map {
 }
 
 #pagecrm_horizontal-multilevel-menu a.pagecrm_parent {
-  background: url(/local/templates/gradient/components/bitrix/menu/horizontal_multilevel_alpha/images/menu-arrow.svg)
+  background: url(/local/templates/gradient/components/bitrix/menu/horizontal_multilevel_alpha../images/menu-arrow.svg)
     center right no-repeat;
 }
 
